@@ -39,7 +39,7 @@ h1 {
     border-radius: 50%;
     border: 2px solid var(--primary-color);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    margin-left: 15px;
+    margin-left: 8px;
   }
 }
 .refs {
@@ -93,7 +93,7 @@ h1 {
   .logo img {
     width: 80px;
     height: 80px;
-    margin-left: 15px;
+    margin-left: 20px;
   }
 
   .refs li a button {
@@ -117,7 +117,7 @@ h1 {
   }
 
   .logo img {
-    margin-left: 20px;
+    margin-left: 25px;
     width: 90px;
     height: 90px;
   }
@@ -158,6 +158,4 @@ h1 {
   .container {
     margin-top: 150px;
   }
-}
-@media (min-width: 1023px) {
 }
