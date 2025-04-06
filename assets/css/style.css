@@ -2,7 +2,6 @@
 :root {
   --primary-color: rgb(19, 19, 19);
   --secondary-color: #f9f9f9;
-  --tertiary-color: rgb(255, 131, 60);
 }
 * {
   margin: 0;
@@ -11,6 +10,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
+  overflow: hidden;
   background-color: var(--primary-color);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/background.jpg);
@@ -22,6 +22,7 @@ body {
 h1 {
   color: var(--secondary-color);
   font-family: "Poppins", sans-serif;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .container {
   width: 100%;
@@ -36,6 +37,7 @@ h1 {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    border: 2px solid var(--primary-color);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   }
 }
@@ -72,4 +74,89 @@ h1 {
       }
     }
   }
+}
+@media (max-width: 480px) {
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .logo img {
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+  }
+
+  .refs li a button {
+    font-size: 14px;
+    padding: 12px 20px 12px 50px;
+    background-size: 24px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .logo img {
+    margin-left: 20px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .refs li a button {
+    font-size: 15px;
+    padding: 14px 30px 14px 55px;
+    background-size: 26px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 819px) {
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .container {
+    max-width: 800px;
+  }
+
+  .refs li a button {
+    font-size: 16px;
+  }
+}
+@media (min-width: 821px) and (max-width: 1023px) {
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .container {
+    margin-top: 150px;
+  }
+}
+@media (min-width: 1023px) {
 }
