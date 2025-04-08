@@ -33,18 +33,22 @@ h1 {
   padding-top: 120px;
 }
 .logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   & img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     border: 2px solid var(--primary-color);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    margin-left: 8px;
+    margin-bottom: 10px;
   }
 }
 .refs {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 30px;
   & li {
     list-style: none;
@@ -68,6 +72,9 @@ h1 {
         transition: all 0.3s ease-in-out;
 
         &:hover {
+          background-image: url("../images/whatsapp-white.png");
+          background-color: var(--primary-color);
+          color: #fff;
           border: 2px solid var(--secondary-color);
           transition: all 0.3s ease-in-out;
           transform: scale(1.1);
@@ -75,6 +82,15 @@ h1 {
       }
     }
   }
+}
+.animate-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+.animate-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 @media (max-width: 480px) {
   body {
@@ -93,7 +109,6 @@ h1 {
   .logo img {
     width: 80px;
     height: 80px;
-    margin-left: 20px;
   }
 
   .refs li a button {
@@ -117,14 +132,13 @@ h1 {
   }
 
   .logo img {
-    margin-left: 25px;
     width: 90px;
     height: 90px;
   }
 
   .refs li a button {
     font-size: 15px;
-    padding: 14px 30px 14px 55px;
+    padding: 14px 90px 14px 90px;
     background-size: 26px;
   }
 }
