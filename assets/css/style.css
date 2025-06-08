@@ -19,6 +19,11 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+footer {
+  width: 100%;
+  height: 30vh;
+  margin-top: 10vh;
+}
 h1 {
   color: var(--secondary-color);
   font-family: "Poppins", sans-serif;
@@ -31,6 +36,39 @@ h1 {
   flex-direction: column;
   align-items: center;
   padding-top: 120px;
+}
+.footer-container {
+  width: 35%;
+  height: 55%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+
+  & h2 {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin-top: 10px;
+  }
+  & h3 {
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+    margin-top: 5px;
+  }
+  & a img {
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
 }
 .logo {
   display: flex;
@@ -101,7 +139,17 @@ h1 {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+  .footer-container {
+    width: 80%;
+    height: 50%;
 
+    & h2 {
+      font-size: 0.8rem;
+    }
+    & h3 {
+      font-size: 0.6rem;
+    }
+  }
   h1 {
     font-size: 1.5rem;
   }
@@ -127,6 +175,22 @@ h1 {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+
+  .footer-container {
+    width: 55%;
+    height: 70%;
+
+    & h2 {
+      font-size: 0.8rem;
+    }
+    & h3 {
+      font-size: 0.6rem;
+    }
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+
   h1 {
     font-size: 1.8rem;
   }
@@ -152,6 +216,22 @@ h1 {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+
+  .footer-container {
+    width: 55%;
+    height: 80%;
+
+    & h2 {
+      font-size: 0.8rem;
+    }
+    & h3 {
+      font-size: 0.6rem;
+    }
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+
   .container {
     max-width: 800px;
   }
@@ -160,7 +240,7 @@ h1 {
     font-size: 16px;
   }
 }
-@media (min-width: 821px) and (max-width: 1023px) {
+@media (min-width: 821px) and (max-width: 1024px) {
   body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(../images/bg.jpg);
@@ -168,6 +248,52 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+  }
+
+  footer {
+    width: 100%;
+    height: 30vh;
+    margin-top: 1vh;
+  }
+
+  .footer-container {
+    width: 55%;
+    height: 50%;
+
+    & h2 {
+      font-size: 0.8rem;
+    }
+    & h3 {
+      font-size: 0.6rem;
+    }
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .container {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  footer {
+    width: 100%;
+    height: 30vh;
+    margin-top: 2vh;
+  }
+
+  .footer-container {
+    width: 45%;
+    height: 50%;
+
+    & h2 {
+      font-size: 0.8rem;
+    }
+    & h3 {
+      font-size: 0.6rem;
+    }
+  }
+  h1 {
+    font-size: 1.5rem;
   }
   .container {
     margin-top: 40px;
