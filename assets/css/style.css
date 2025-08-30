@@ -111,14 +111,14 @@ h1 {
         transition: all 0.3s ease-in-out;
 
         &:hover {
-          background-image: url("../images/whatsapp-white.png");
-          background-color: var(--primary-color);
-          color: #fff;
-          border: 2px solid var(--secondary-color);
+          filter: invert(100%);
           transition: all 0.3s ease-in-out;
           transform: scale(1.1);
         }
       }
+    }
+    & #loc {
+      background-image: url("../images/pinLoc.png");
     }
   }
 }
